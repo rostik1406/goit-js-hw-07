@@ -15,7 +15,7 @@
 import { galleryItems } from "./gallery-items.js";
 console.log(galleryItems);
 
-//
+// 
 const galleryEl = document.querySelector(".gallery");
 const galleryList = createImageGalleryCard(galleryItems);
 
