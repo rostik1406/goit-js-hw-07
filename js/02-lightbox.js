@@ -26,6 +26,7 @@ function createGalleryCardsItem(galleryItems) {
     <div class="gallery__item">
     <a class="gallery__link" href="${original}">
     <img
+      loading="lazy" width="100%" height="100%"
       class="gallery__img"
       src="${preview}"
       data-source="${original}"
