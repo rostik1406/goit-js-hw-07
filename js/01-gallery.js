@@ -15,7 +15,7 @@
 import { galleryItems } from "./gallery-items.js";
 console.log(galleryItems);
 
-// 
+//
 const galleryEl = document.querySelector(".gallery");
 const galleryList = createImageGalleryCard(galleryItems);
 
@@ -44,6 +44,11 @@ galleryEl.addEventListener("click", onGalleryClick);
 
 function onGalleryClick(e) {
   e.preventDefault();
+
+  if (e.target.nodeName !== "IMG") {
+    return;
+  }
+
   const imgSource = e.target.dataset.source;
   const instance = basicLightbox.create(`
     <img
